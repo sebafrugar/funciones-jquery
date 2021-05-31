@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#button').click(function(){
+                $('h1').addClass('rojito');
+            });
+            $('#button2').click(function(){
+                $('img').toggle();
+            });
+            $('#button3').click(function(){
+                $('p').hide();
+            });
+            $('#button4').click(function(){
+                $('p').show();
+            });
+            $('h3').click(function() {
+              $( "h3" ).slideUp();
+            });
+        })
+      </script>
+      <style>
+          .rojito{
+              background-color: red;
+              color: white;
+          }
+      </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <header >
+        <h1>praticando jquery</h1>
+        <input type="button" id="button" value="apretame" style="width: 150px;">
+        <h3>slice up</h3>
+        
+    </header>
+    <main>
+        <img src="https://www.hogarmania.com/archivos/201204/estrenimiento-gato-bebe2-xl-668x400x80xX.jpg" alt="gatito" class="d-block">
+        <input type="button" id="button2" value="adios gatito" style="width: 150px;" >
+    </main>
+    <footer>
+        <p>parrafo 1 probando desaparecer</p>
+        <input type="button" id="button3" value="esconder parrafo" style="width: 150px;" >
+        <input type="button" id="button4" value="mostrar parrafo" style="width: 150px;" >
+
+    </footer>
+</body>
+</html>
